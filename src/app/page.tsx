@@ -1,103 +1,233 @@
 import Image from "next/image";
+import CustomerReviews from "./components/CustomerReviews";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main>
+      {/* Hero Section */}
+      <section
+        className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden pt-20"
+      >
+        {/* Background Image */}
+        <img
+          src="/images/Chota-Dadiyal.png"
+          alt="Hero image"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/10 z-10" />
+        {/* Centered Content */}
+        <div className="relative z-20 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-white text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
+            Explore Indian Jungles with Us
+          </h1>
+          <p className="text-[#E0E0E0] text-lg md:text-2xl mb-8 max-w-2xl">
+            Wildlife Tours, Photography Expeditions & Conservation Adventures
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#tours"
+            className="inline-block bg-leaf text-[#0C0C0C] font-semibold px-8 py-3 rounded-full shadow-lg transition-colors duration-200 hover:bg-[#5fa233] focus:outline-none focus:ring-2 focus:ring-leaf text-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            View Our Tours
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      {/* Tours Section */}
+      <section className="bg-jungle text-white py-16 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Left Column */}
+          <div className="flex flex-col gap-10">
+            {/* Guided Wildlife Tours */}
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+              <img src="/images/Magge-Headon.png" alt="Guided Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <h2 className="text-[#7AD151] font-bold text-xl mb-2">Guided Wildlife Tours</h2>
+              <p className="text-gray-300 text-sm mb-4 text-center">Join our expert-led expeditions into India's wildest jungles. Experience thrilling safaris, learn about conservation, and capture stunning wildlife moments.</p>
+              <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Tour Info</a>
+            </div>
+            
+          </div>
+          {/* Right Column */}
+          <div className="flex flex-col gap-10">
+            {/* Corporate Wildlife Tours */}
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Crossover Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <h2 className="text-[#7AD151] font-bold text-xl mb-2">Crossover Tours</h2>
+              <p className="text-gray-300 text-sm mb-4 text-center">Team-building in the wild! Our corporate tours offer unique bonding experiences, leadership activities, and nature-based workshops in stunning locations.</p>
+              <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Enquire</a>
+            </div>
+            {/* Birding Tours */}
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <h2 className="text-[#7AD151] font-bold text-xl mb-2">Corporate Wildlife Tours</h2>
+              <p className="text-gray-300 text-sm mb-4 text-center">Discover India's rich avian diversity with our birding experts. Perfect for beginners and seasoned birders alike, with masterclasses and guided walks.</p>
+              <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">View Our Birding Tours</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Our Impact Section */}
+      <section className="relative w-full min-h-[60vh] flex items-center justify-center py-16 px-6">
+        {/* Background Image */}
+        <img
+          src="/images/Hero-Image.png"
+          alt="Leopard close-up background"
+          className="absolute inset-0 w-full h-full object-cover object-center md:object-[top] z-0 min-h-[400px]"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        {/* Content Card */}
+        <div className="relative z-20 max-w-3xl mx-auto bg-black/60 backdrop-blur-md rounded-xl p-8 flex flex-col items-center text-center shadow-2xl">
+          <h2 className="text-[#7AD151] font-bold text-3xl mb-4">Our Impact</h2>
+          <p className="text-white mb-8 text-lg">
+            At IntoTheWild Expeditions, since our inception in 2019, we've been dedicated to nurturing the next generation of wildlife photographers. We've built a vibrant community that shares our passion for nature and wildlife.
+          </p>
+          {/* Stats */}
+          <div className="flex flex-wrap justify-center gap-8 w-full">
+            <div className="flex flex-col items-center min-w-[140px]">
+              <span className="text-[#7AD151] text-4xl font-bold">375+</span>
+              <span className="uppercase text-[#E0E0E0] text-sm tracking-wider mt-1">Photo Enthusiasts Trained</span>
+            </div>
+            <div className="flex flex-col items-center min-w-[140px]">
+              <span className="text-[#7AD151] text-4xl font-bold">250+</span>
+              <span className="uppercase text-[#E0E0E0] text-sm tracking-wider mt-1">Photo Tours Offered</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <CustomerReviews />
+      {/* Why Choose Us Section */}
+      <section className="w-full bg-[#1A1A1A] text-white py-20 px-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+          {/* Left: Image */}
+          <div className="flex-1 w-full flex justify-center">
+            <img
+              src="/images/Magge-Marking.png"
+              alt="Group photo of tour participants"
+              className="rounded-xl shadow-lg w-full max-w-md object-cover object-center"
+            />
+          </div>
+          {/* Right: Content */}
+          <div className="flex-1 w-full flex flex-col justify-center items-start max-w-xl mx-auto">
+            <h2 className="text-[#7AD151] font-bold text-3xl mb-4">Why Choose Us?</h2>
+            <p className="mb-6 text-lg">
+              Because it's more than just a tour. It's a transformative journey through the heart of India's wilderness. With professional mentors, eco-conscious itineraries, and decades of field experience, IntoTheWild is where your lens meets purpose.
+            </p>
+            <ul className="mb-8 space-y-3">
+              <li className="flex items-center gap-2">
+                {/* Checkmark Icon */}
+                <svg className="w-5 h-5 text-[#7AD151] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <span>Trusted by 300+ Photographers</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#7AD151] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <span>Local Experts & Naturalists</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#7AD151] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <span>Comfortable & Ethical Safari Planning</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#7AD151] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <span>Ideal for Beginners to Pros</span>
+              </li>
+            </ul>
+            <a
+              href="#team"
+              className="bg-[#7AD151] text-[#0C0C0C] px-6 py-2 rounded-md font-semibold uppercase tracking-wide hover:bg-[#5fa233] transition-colors"
+            >
+              Meet Our Team
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Media Section */}
+      <section className="w-full bg-[#0C0C0C] text-white py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-[#7AD151] font-bold text-3xl mb-2">Moments from the Wild</h2>
+          <p className="text-[#E0E0E0] mb-8">Captured by our travelers and mentors on real jungle safaris</p>
+          {/* Carousel/Grid */}
+          <div className="flex gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 md:overflow-x-visible">
+            {/* Image Card 1 */}
+            <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
+              <img src="/images/Magge-Headon.png" alt="Expedition 1" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
+              </div>
+            </div>
+            {/* Image Card 2 */}
+            <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
+              <img
+                src="/images/Tadoba-ChotaDadiyal.png"
+                alt="Expedition 2"
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                style={{ objectPosition: "center" }}
+              />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
+              </div>
+            </div>
+            {/* Image Card 3 */}
+            <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
+              <img src="/images/Coorg-Tusker.jpg" alt="Expedition 3" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
+              </div>
+            </div>
+            {/* Image Card 4 */}
+            <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
+              <img
+                src="/images/Tadoba-Shimbu.png"
+                alt="Expedition 4"
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 bg-black"
+                style={{ objectPosition: "center" }}
+              />
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
+              </div>
+            </div>
+          </div>
+          {/* Instagram CTA */}
+          <div className="flex justify-center mt-10">
+            <a
+              href="https://instagram.com/itwexpedition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#7AD151] text-[#0C0C0C] px-5 py-2 rounded-lg font-semibold hover:bg-[#5fa233] transition-colors"
+            >
+              Follow Us on Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* Contact Section */}
+      <section id="contact" className="w-full bg-[#1A1A1A] text-white py-20 px-8">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <h2 className="text-[#7AD151] text-2xl font-bold">Get in Touch</h2>
+          <p className="mt-2 max-w-2xl mx-auto">Have questions about our tours, availability, or custom itineraries? We'd love to hear from you.</p>
+        </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Left: Contact Form */}
+          <form className="w-full max-w-lg mx-auto flex flex-col gap-4">
+            <div>
+              <label htmlFor="name" className="sr-only">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required className="w-full bg-[#0C0C0C] text-white rounded-md border border-gray-600 px-4 py-2 focus:ring-2 focus:ring-[#7AD151] focus:outline-none"/>
+            </div>
+            <div>
+              <label htmlFor="email" className="sr-only">Email</label>
+              <input type="email" id="email" placeholder="Your Email" required className="w-full bg-[#0C0C0C] text-white rounded-md border border-gray-600 px-4 py-2 focus:ring-2 focus:ring-[#7AD151] focus:outline-none"/>
+            </div>
+            <div>
+              <label htmlFor="message" className="sr-only">Message</label>
+              <textarea id="message" rows={5} placeholder="Your Message" required className="w-full bg-[#0C0C0C] text-white rounded-md border border-gray-600 px-4 py-2 focus:ring-2 focus:ring-[#7AD151] focus:outline-none"></textarea>
+            </div>
+            <button type="submit" className="bg-[#7AD151] text-[#0C0C0C] px-6 py-2 rounded-md font-semibold uppercase tracking-wide hover:bg-[#5fa233] transition-colors">Send Message</button>
+          </form>
+          {/* Right: Map/Image */}
+          <div className="w-full flex items-center justify-center">
+             <img src="/images/Elephant-Herd.jpg" alt="Elephant Herd in the jungle" className="rounded-xl shadow-lg w-full h-full object-cover object-center max-h-[400px]" />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

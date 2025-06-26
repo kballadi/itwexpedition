@@ -1,26 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #0C0C0C; /* jungle black */
+  --foreground: #FFFFFF;
+  --accent: #7AD151;      /* leaf green */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0C0C0C;
+    --foreground: #FFFFFF;
+    --accent: #7AD151;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav, .navbar, .font-sans {
+  color: #FFFFFF !important;
+}
+
+footer {
+  background: var(--overlay) !important;
+  color: var(--accent) !important;
+}
+
+button, .btn-primary {
+  background: var(--button);
+  color: #fff;
+  transition: background 0.2s;
+}
+button:hover, .btn-primary:hover {
+  background: var(--button-hover);
+}
+
+.card, .section-card {
+  background: var(--card);
+  color: #2B002B;
+}
+
+.accent, .text-accent {
+  color: var(--accent) !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
 }
