@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import ContactModal from "./components/ContactModal";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { StagewiseToolbar } from "@stagewise/toolbar-next";
+import { ReactPlugin } from "@stagewise-plugins/react";
 
 
 const geistSans = Geist({
@@ -36,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <StagewiseToolbar config={{ plugins: [ReactPlugin] }} />
         <Navbar onContactClick={() => setContactOpen(true)} />
         <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
         <div className="pt-20">

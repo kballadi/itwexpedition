@@ -3,7 +3,7 @@ import Image from 'next/image';
 const HeroBannerWildlife = () => (
   <section className="relative w-full min-h-[60vh] flex items-center justify-center overflow-hidden">
     {/* Background Image */}
-    <div className="absolute inset-0 w-full h-full z-0">
+    <div className="absolute inset-0 w-full h-full z-0 flex justify-center items-center">
       <Image
         src="/images/Chota-Dadiyal.png"
         alt="Elephant Herd"

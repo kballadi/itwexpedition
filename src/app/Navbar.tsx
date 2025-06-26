@@ -57,7 +57,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
 
   return (
     <nav id="navbar" className="bg-jungle text-white font-sans transition-colors duration-300 h-20">
-      <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 lg:py-0">
+      <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 lg:py-0 pt-4">
         {/* Logo & Brand */}
         <Link href="/" className="flex items-center text-lg font-bold tracking-wide gap-2">
           <img src="/images/INTO THE WILD.png" alt="IntoTheWild Logo" className="h-8 w-auto object-contain" />
@@ -92,8 +92,8 @@ export default function Navbar({ onContactClick }: NavbarProps) {
               <ul
                 className={`absolute left-0 mt-2 w-40 bg-jungle border border-gray-800 rounded shadow-lg transition-all duration-200 z-20 ${dropdown.social ? 'block' : 'hidden'} group-hover:block`}
               >
-                <li><a href="#" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">INSTAGRAM</a></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/kalyanwildlife/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">INSTAGRAM</a></li>
+                <li><a href="https://www.youtube.com/@IntoTheWildWithKalyan" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">YOUTUBE</a></li>
               </ul>
             </li>
             {/* About Us */}

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import CustomerReviews from "./components/CustomerReviews";
 
@@ -26,7 +27,7 @@ export default function Home() {
           </p>
           <a
             href="#tours"
-            className="inline-block bg-leaf text-[#0C0C0C] font-semibold px-8 py-3 rounded-full shadow-lg transition-colors duration-200 hover:bg-[#5fa233] focus:outline-none focus:ring-2 focus:ring-leaf text-lg"
+            className="inline-block bg-leaf text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-colors duration-200 hover:bg-[#5fa233] focus:outline-none focus:ring-2 focus:ring-leaf text-lg"
           >
             View Our Tours
           </a>
@@ -38,7 +39,7 @@ export default function Home() {
           {/* Left Column */}
           <div className="flex flex-col gap-10">
             {/* Guided Wildlife Tours */}
-            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px]">
               <img src="/images/Magge-Headon.png" alt="Guided Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Guided Wildlife Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Join our expert-led expeditions into India's wildest jungles. Experience thrilling safaris, learn about conservation, and capture stunning wildlife moments.</p>
@@ -49,14 +50,16 @@ export default function Home() {
           {/* Right Column */}
           <div className="flex flex-col gap-10">
             {/* Corporate Wildlife Tours */}
-            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+            {/*
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
               <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Crossover Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Crossover Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Team-building in the wild! Our corporate tours offer unique bonding experiences, leadership activities, and nature-based workshops in stunning locations.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Enquire</a>
             </div>
+            */}
             {/* Birding Tours */}
-            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px]">
+            <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
               <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Corporate Wildlife Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Discover India's rich avian diversity with our birding experts. Perfect for beginners and seasoned birders alike, with masterclasses and guided walks.</p>
