@@ -35,7 +35,7 @@ const AboutPage = () => {
             <div className="max-w-sm rounded-xl shadow-xl overflow-hidden">
               <Image
                 src="/images/Profile-Picture.jpg"
-                alt="Portrait of Arvind Karthik"
+                alt="Portrait of Kalyan Babu"
                 width={400}
                 height={500}
                 className="object-cover"

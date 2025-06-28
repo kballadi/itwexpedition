@@ -57,7 +57,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
 
   return (
     <nav id="navbar" className="bg-jungle text-white font-sans transition-colors duration-300 h-20">
-      <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 lg:py-0 pt-4">
+      <div  style={{ marginTop: '50px' }} className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 lg:py-0 pt-4">
         {/* Logo & Brand */}
         <Link href="/" className="flex items-center text-lg font-bold tracking-wide gap-2">
           <img src="/images/INTO THE WILD.png" alt="IntoTheWild Logo" className="h-8 w-auto object-contain" />
@@ -120,7 +120,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
               >
                 <li><Link href="/gallery/wildlife" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">WILDLIFE</Link></li>
                 <li><Link href="#birding" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">BIRDING</Link></li>
-                <li><Link href="#corporate" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">CORPORATE</Link></li>
+               {/*  <li><Link href="#corporate" className="block px-4 py-2 hover:bg-leaf hover:text-jungle transition-colors duration-200 uppercase text-xs font-poppins">CORPORATE</Link></li> */}
               </ul>
             </li>
             {/* Contact Us */}
