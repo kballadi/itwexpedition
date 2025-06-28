@@ -49,14 +49,14 @@ const AboutPage = () => {
         <h2 className="text-white text-center uppercase font-bold tracking-widest mb-8 text-lg">Featured In</h2>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-center justify-center">
           {/* National Geographic Logo Placeholder */}
-          <div className="bg-white p-4 rounded shadow h-20 w-36 flex items-center justify-center">
+          <div className="bg-white p-4 rounded shadow h-50 w-50 flex items-center justify-center">
             {/* Replace src with actual logo if available */}
-            <img src="/images/natgeo-logo.png" alt="National Geographic" className="object-contain h-full w-full" />
+            <img src="/images/Nif.jpg" alt="Nature In Focus" className="object-contain h-full w-full" />
           </div>
           {/* Animal Planet Logo Placeholder */}
-          <div className="bg-white p-4 rounded shadow h-20 w-36 flex items-center justify-center">
+          <div className="bg-white p-4 rounded shadow h-50 w-50 flex items-center justify-center">
             {/* Replace src with actual logo if available */}
-            <img src="/images/animalplanet-logo.png" alt="Animal Planet" className="object-contain h-full w-full" />
+            <img src="/images/AnimalPlanet.jpg" alt="Animal Planet" className="object-contain h-full w-full" />
           </div>
         </div>
       </section>
