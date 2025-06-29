@@ -1,10 +1,10 @@
 "use client";
-import type { Metadata } from "next";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Navbar from "./Navbar";
-import Home from "./page";
+
 import Footer from "./Footer";
 import ContactModal from "./components/ContactModal";
 import { useState, useEffect } from "react";

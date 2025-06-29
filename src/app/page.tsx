@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import CustomerReviews from "./components/CustomerReviews";
 import { FaInstagram } from "react-icons/fa";
 

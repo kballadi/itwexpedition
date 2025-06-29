@@ -7,7 +7,7 @@ const reviews = [
   {
     name: 'Rajanikanth',
     location: 'San Jose, USA',
-    review: "A tour with IntoTheWild is truly memorable. Arvind's teaching is practical and ensures that whatever we learn is applied in the field. He has excellent tracking skills and coordinates well with the naturalist, which is always a great combination. He ensures that all end-to-end arrangements are in place and blends seamlessly with the group to create cherished memories. I have always enjoyed his tours and photo workshops.",
+    review: "A tour with IntoTheWild is truly memorable. Kalyan's teaching is practical and ensures that whatever we learn is applied in the field. He has excellent tracking skills and coordinates well with the naturalist, which is always a great combination. He ensures that all end-to-end arrangements are in place and blends seamlessly with the group to create cherished memories. I have always enjoyed his tours and photo workshops.",
     image: "/images/guests/Rajanikanth.jpg",
   },
   {
