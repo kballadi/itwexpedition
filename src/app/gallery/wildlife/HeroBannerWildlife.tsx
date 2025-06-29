@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 const HeroBannerWildlife = () => (
-  <section className="relative w-full min-h-[60vh] flex items-center justify-center">
+  <section className="relative w-full min-h-[100vh] flex items-center justify-center">
     {/* Background Image */}
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
       <Image
-        src="/images/gallery-wildlife/Kabini-Peacocks.png"
-        alt="Chota Dadiya;" sizes='10vw'
+        src="/images/gallery-wildlife/cutlip_web.png"
+        alt="Chota Dadiya;" sizes='100vw'
         fill
-        style={{ objectFit: 'cover', objectPosition: 'center' }}
+        style={{ objectFit: 'cover', objectPosition: 'center', opacity: 1 }}
         priority
         className="w-full h-full"
       />

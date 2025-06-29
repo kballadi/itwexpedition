@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <main className="bg-[#0C0C0C] text-white">
       {/* Founder Introduction Section */}
-      <section className="relative w-full py-20 px-8 flex items-center justify-center min-h-[80vh]">
+      <section className="relative w-full py-20 px-8 flex items-center justify-center min-h-[100vh]">
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-black/60 z-10" />
         
@@ -13,9 +13,9 @@ const AboutPage = () => {
         <Image
           src="/images/Coorg-Tusker.jpg"
           alt="Tusker in a forest background"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0 opacity-40"
+          layout="fill" 
+          objectFit="cover" objectPosition='center'
+          className="absolute inset-0 z-0 opacity-70"
         />
 
         <div className="relative z-20 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
@@ -23,7 +23,7 @@ const AboutPage = () => {
           <div className="flex flex-col justify-center text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">I am Kalyan Babu Alladi…</h1>
             <p className="mb-4 text-lg text-gray-300">
-              My journey into the wild began in 2019, when a lifelong passion for nature transformed into a professional calling. As a <span className="text-[#7AD151]">wildlife photographer</span>, I found my purpose in the dense forests of Bandipur and the sprawling landscapes of Nagarahole.
+              My journey into the wild began in 2019, when a lifelong passion for nature transformed into a professional calling. As a <span className="text-[#7AD151]">wildlife photographer</span>, I found my purpose in the dense forests of Kabini and the sprawling landscapes of Nagarahole.
             </p>
             <p className="text-lg text-gray-300">
               I founded IntoTheWild Expeditions to share this passion and promote conservation through the powerful medium of lens-based storytelling. We are dedicated to creating ethical, immersive, and unforgettable wildlife experiences.

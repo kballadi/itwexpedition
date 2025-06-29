@@ -34,7 +34,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ open, onClose }) => {
           </div>
           <p className="text-white text-lg mb-2" style={{fontSize: 14, fontWeight: 700}}>For Any Enquires Please Email Us</p>
           <p className="text-white text-base mb-2" style={{fontSize: 14, fontWeight: 700}}>
-            <span style={{fontSize: 14, fontWeight : 700}} className="font-semibold">Email:</span> Info@IntoTheWild.Com
+            <span style={{fontSize: 14, fontWeight : 700}} className="font-semibold">Email:</span> kalyanwildlifephotographer@gmail.com {/* This needs to be updated to site Email */}
           </p>
           <p className="text-white text-base" style={{fontSize: 14, fontWeight: 700}}>
             <span className="font-semibold">Call Or WhatsApp</span> - 94410 17244 

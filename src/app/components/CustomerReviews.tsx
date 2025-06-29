@@ -6,21 +6,21 @@ import Image from 'next/image';
 const reviews = [
   {
     name: 'Rajanikanth',
-    location: 'Hyderabad',
+    location: 'San Jose, USA',
     review: "A tour with IntoTheWild is truly memorable. Arvind's teaching is practical and ensures that whatever we learn is applied in the field. He has excellent tracking skills and coordinates well with the naturalist, which is always a great combination. He ensures that all end-to-end arrangements are in place and blends seamlessly with the group to create cherished memories. I have always enjoyed his tours and photo workshops.",
-    image: null,
+    image: "/images/guests/Rajanikanth.jpg",
   },
   {
-    name: 'Hasham',
+    name: 'Krishna Chaitanya',
     location: 'Hyderabad',
     review: "An absolutely breathtaking experience! The guides were knowledgeable, and the entire trip was organized flawlessly. I captured some of the best photos of my life. Highly recommended for any wildlife enthusiast.",
-    image: null,
+    image: "/images/guests/KC.jpg",
   },
   {
     name: 'Randheer Reddy',
     location: 'Hyderabad',
     review: "From the planning stages to the final safari, everything was perfect. The team's passion for wildlife is contagious. They go the extra mile to ensure you have a safe, ethical, and unforgettable adventure.",
-    image: null,
+    image: "/images/guests/randheer.jpg",
   },
 ];
 
@@ -44,7 +44,7 @@ const CustomerReviews = () => {
   }, [activeIndex]);
 
   return (
-    <section className="relative w-full bg-black py-20 px-4 sm:px-8 flex items-center justify-center min-h-[70vh] h-[70vh] overflow-hidden">
+    <section className="relative w-full bg-black py-20 px-4 sm:px-8 flex items-center justify-center min-h-[70vh] h-[100vh] overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/Chota-Dadiyal.png"

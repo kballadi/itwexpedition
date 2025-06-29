@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import CustomerReviews from "./components/CustomerReviews";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -60,10 +61,10 @@ export default function Home() {
             */}
             {/* Birding Tours */}
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
-              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
-              <h2 className="text-[#7AD151] font-bold text-xl mb-2">Corporate Wildlife Tours</h2>
-              <p className="text-gray-300 text-sm mb-4 text-center">Discover India's rich avian diversity with our birding experts. Perfect for beginners and seasoned birders alike, with masterclasses and guided walks.</p>
-              <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">View Our Birding Tours</a>
+              <img src="/images/birding/hawk-eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <h2 className="text-[#7AD151] font-bold text-xl mb-2">Birding Tours</h2>
+              <p className="text-gray-300 text-sm mb-4 text-center">Discover India's rich avian diversity with our birding experts. Perfect for beginners with masterclasses and guided walks.</p>
+              <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Coming Up...</a>
             </div>
           </div>
         </div>
@@ -71,27 +72,27 @@ export default function Home() {
       {/* Our Impact Section */}
       <section className="relative w-full min-h-[60vh] flex items-center justify-center py-16 px-6">
         {/* Background Image */}
-        <img
+        {/* <img
           src="/images/Hero-Image.png"
           alt="Leopard close-up background"
           className="absolute inset-0 w-full h-full object-cover object-center md:object-[top] z-0 min-h-[400px]"
-        />
+        /> */}
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60 z-10" />
         {/* Content Card */}
         <div className="relative z-20 max-w-3xl mx-auto bg-black/60 backdrop-blur-md rounded-xl p-8 flex flex-col items-center text-center shadow-2xl">
           <h2 className="text-[#7AD151] font-bold text-3xl mb-4">Our Impact</h2>
           <p className="text-white mb-8 text-lg">
-            At IntoTheWild Expeditions, since our inception in 2019, we've been dedicated to nurturing the next generation of wildlife photographers. We've built a vibrant community that shares our passion for nature and wildlife.
+            At IntoTheWild Expeditions, since our inception in 2025, we've been dedicated to nurturing the next generation of wildlife photographers. We've built a vibrant community that shares our passion for nature and wildlife.
           </p>
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 w-full">
             <div className="flex flex-col items-center min-w-[140px]">
-              <span className="text-[#7AD151] text-4xl font-bold">375+</span>
+              <span className="text-[#7AD151] text-4xl font-bold">100+</span>
               <span className="uppercase text-[#E0E0E0] text-sm tracking-wider mt-1">Photo Enthusiasts Trained</span>
             </div>
             <div className="flex flex-col items-center min-w-[140px]">
-              <span className="text-[#7AD151] text-4xl font-bold">250+</span>
+              <span className="text-[#7AD151] text-4xl font-bold">50+</span>
               <span className="uppercase text-[#E0E0E0] text-sm tracking-wider mt-1">Photo Tours Offered</span>
             </div>
           </div>
@@ -103,10 +104,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           {/* Left: Image */}
           <div className="flex-1 w-full flex justify-center">
-            <img
-              src="/images/Magge-Marking.png"
+            <img 
+              src="/images/guests/Tour-Participants.jpg"
               alt="Group photo of tour participants"
-              className="rounded-xl shadow-lg w-full max-w-md object-cover object-center"
+              className="rounded-xl shadow-lg w-full max-w-[200px] aspect-circle object-cover object-center"
             />
           </div>
           {/* Right: Content */}
@@ -197,6 +198,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="bg-[#7AD151] text-[#0C0C0C] px-5 py-2 rounded-lg font-semibold hover:bg-[#5fa233] transition-colors"
             >
+              <FaInstagram className="inline-block mr-2" size={20} />
               Follow Us on Instagram
             </a>
           </div>
@@ -223,7 +225,63 @@ export default function Home() {
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea id="message" rows={5} placeholder="Your Message" required className="w-full bg-[#0C0C0C] text-white rounded-md border border-gray-600 px-4 py-2 focus:ring-2 focus:ring-[#7AD151] focus:outline-none"></textarea>
             </div>
-            <button type="submit" className="bg-[#7AD151] text-[#0C0C0C] px-6 py-2 rounded-md font-semibold uppercase tracking-wide hover:bg-[#5fa233] transition-colors">Send Message</button>
+            <button 
+              type="submit" 
+              className="bg-[#7AD151] text-[#0C0C0C] px-6 py-2 rounded-md font-semibold uppercase tracking-wide hover:bg-[#5fa233] transition-colors"
+              onClick={async (e) => {
+                e.preventDefault();
+                
+                const name = (document.getElementById('name') as HTMLInputElement)?.value?.trim();
+                const email = (document.getElementById('email') as HTMLInputElement)?.value?.trim();
+                const message = (document.getElementById('message') as HTMLTextAreaElement)?.value?.trim();
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                  alert('Please enter a valid email address');
+                  return;
+                }
+                
+                // Message validation
+                if (!message || message.length < 10) {
+                  alert('Please enter a message with at least 10 characters');
+                  return;
+                }
+                
+                // Prevent spam by checking for suspicious patterns
+                const suspiciousPatterns = [
+                  /[A-Z]{10,}/, // Too many consecutive caps
+                  /[!@#$%^&*()]{5,}/, // Too many special characters
+                  /\b(spam|viagra|casino|loan)\b/i, // Common spam words
+                ];
+                
+                const isSuspicious = suspiciousPatterns.some(pattern => pattern.test(message));
+                if (isSuspicious) {
+                  alert('Message contains suspicious content. Please review and try again.');
+                  return;
+                }
+                
+                try {
+                  // Send email using mailto link with pre-filled content
+                  const subject = encodeURIComponent('Enquiry about the Tour');
+                  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+                  const mailtoLink = `mailto:kalyanwildlifephotographer@gmail.com?subject=${subject}&body=${body}`;
+                  
+                  window.open(mailtoLink, '_blank');
+                  
+                  // Clear form
+                  (document.getElementById('name') as HTMLInputElement).value = '';
+                  (document.getElementById('email') as HTMLInputElement).value = '';
+                  (document.getElementById('message') as HTMLTextAreaElement).value = '';
+                  
+                  alert('Thank you for your enquiry! Your email client should open with a pre-filled message.');
+                } catch (error) {
+                  alert('There was an error sending your message. Please try again or contact us directly.');
+                }
+              }}
+            >
+              Send Message
+            </button>
           </form>
           {/* Right: Map/Image */}
           <div className="w-full flex items-center justify-center">

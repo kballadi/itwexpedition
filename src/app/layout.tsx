@@ -44,7 +44,7 @@ export default function RootLayout({
         <div className="pt-20">
           {children}
         </div>
-        <Footer />
+        <Footer onContactClick={() => setContactOpen(true)}/>
       </body>
     </html>
   );
