@@ -43,7 +43,7 @@ export default function Home() {
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px]">
               <img src="/images/Magge-Headon.png" alt="Guided Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Guided Wildlife Tours</h2>
-              <p className="text-gray-300 text-sm mb-4 text-center">Join our expert-led expeditions into India's wildest jungles. Experience thrilling safaris, learn about conservation, and capture stunning wildlife moments.</p>
+              <p className="text-gray-300 text-sm mb-4 text-center">Join our expert-led expeditions into India&apos;s wildest jungles. Experience thrilling safaris, learn about conservation, and capture stunning wildlife moments.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Tour Info</a>
             </div>
             
@@ -63,7 +63,7 @@ export default function Home() {
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
               <img src="/images/birding/hawk-eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Birding Tours</h2>
-              <p className="text-gray-300 text-sm mb-4 text-center">Discover India's rich avian diversity with our birding experts. Perfect for beginners with masterclasses and guided walks.</p>
+              <p className="text-gray-300 text-sm mb-4 text-center">Discover India&apos;s rich avian diversity with our birding experts. Perfect for beginners with masterclasses and guided walks.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Coming Up...</a>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
         <div className="relative z-20 max-w-3xl mx-auto bg-black/60 backdrop-blur-md rounded-xl p-8 flex flex-col items-center text-center shadow-2xl">
           <h2 className="text-[#7AD151] font-bold text-3xl mb-4">Our Impact</h2>
           <p className="text-white mb-8 text-lg">
-            At IntoTheWild Expeditions, since our inception in 2025, we've been dedicated to nurturing the next generation of wildlife photographers. We've built a vibrant community that shares our passion for nature and wildlife.
+            At IntoTheWild Expeditions, since our inception in 2025, we&apos;ve been dedicated to nurturing the next generation of wildlife photographers. We&apos;ve built a vibrant community that shares our passion for nature and wildlife.
           </p>
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 w-full">
@@ -114,7 +114,7 @@ export default function Home() {
           <div className="flex-1 w-full flex flex-col justify-center items-start max-w-xl mx-auto">
             <h2 className="text-[#7AD151] font-bold text-3xl mb-4">Why Choose Us?</h2>
             <p className="mb-6 text-lg">
-              Because it's more than just a tour. It's a transformative journey through the heart of India's wilderness. With professional mentors, eco-conscious itineraries, and decades of field experience, IntoTheWild is where your lens meets purpose.
+              Because it&apos;s more than just a tour. It&apos;s a transformative journey through the heart of India&apos;s wilderness. With professional mentors, eco-conscious itineraries, and decades of field experience, IntoTheWild is where your lens meets purpose.
             </p>
             <ul className="mb-8 space-y-3">
               <li className="flex items-center gap-2">
@@ -208,7 +208,7 @@ export default function Home() {
       <section id="contact" className="w-full bg-[#1A1A1A] text-white py-20 px-8">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-[#7AD151] text-2xl font-bold">Get in Touch</h2>
-          <p className="mt-2 max-w-2xl mx-auto">Have questions about our tours, availability, or custom itineraries? We'd love to hear from you.</p>
+          <p className="mt-2 max-w-2xl mx-auto">Have questions about our tours, availability, or custom itineraries? We&apos;d love to hear from you.</p>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left: Contact Form */}

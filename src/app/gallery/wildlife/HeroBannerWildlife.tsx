@@ -19,7 +19,7 @@ const HeroBannerWildlife = () => (
     <div className="relative z-20 text-center px-4 max-w-2xl mx-auto">
       <h1 className="uppercase text-white text-2xl md:text-4xl font-bold mb-4 drop-shadow-lg">INDIAN WILDLIFE</h1>
       <p className="text-white text-lg md:text-xl leading-relaxed drop-shadow max-w-xl mx-auto">
-        India is home to one of the world's richest biodiversities, from the majestic <span className='font-semibold'>Royal Bengal Tiger</span> and elusive <span className='font-semibold'>Indian Leopard</span> to the gentle <span className='font-semibold'>Asiatic Elephant</span>. Our wild spaces are sanctuaries for countless rare and beautiful species, each playing a vital role in the ecosystem.
+        India is home to one of the world&apos;s richest biodiversities, from the majestic <span className='font-semibold'>Royal Bengal Tiger</span> and elusive <span className='font-semibold'>Indian Leopard</span> to the gentle <span className='font-semibold'>Asiatic Elephant</span>. Our wild spaces are sanctuaries for countless rare and beautiful species, each playing a vital role in the ecosystem.
       </p>
     </div>
   </section>
