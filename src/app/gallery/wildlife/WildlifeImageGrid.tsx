@@ -4,15 +4,15 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const images = [
   // Tigers
-  '/images/gallery-wildlife/Jackal-Sunrise.png',
-  '/images/gallery-wildlife/Magge-Waterpool.png',
-  '/images/gallery-wildlife/Magge-Marking.png',
-  '/images/gallery-wildlife/Kabini-Peacock.png',
-  '/images/gallery-wildlife/Tusker-Coorg.jpg',
-  '/images/gallery-wildlife/Herd-Kabini.jpg',
-  '/images/gallery-wildlife/Chota-Dadiyal-Headon.png',
-  '/images/gallery-wildlife/PavanDev-Tadoba .png',
-  '/images/gallery-wildlife/Langur-Kabini.png',
+  '/images/gallery-wildlife/jackal-Sunrise.png',
+  '/images/gallery-wildlife/magge-Waterpool.png',
+  '/images/gallery-wildlife/magge-Marking.png',
+  '/images/gallery-wildlife/kabini-Peacock.png',
+  '/images/gallery-wildlife/tusker-Coorg.jpg',
+  '/images/gallery-wildlife/herd-Kabini.jpg',
+  '/images/gallery-wildlife/chota-Dadiyal-Headon.png',
+  '/images/gallery-wildlife/pavanDev-Tadoba .png',
+  '/images/gallery-wildlife/langur-Kabini.png',
 ];
 
 // Carousel version
