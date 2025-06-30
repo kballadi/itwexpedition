@@ -8,19 +8,19 @@ const reviews = [
     name: 'Rajanikanth',
     location: 'San Jose, USA',
     review: "A tour with IntoTheWild is truly memorable. Kalyan&apos;s teaching is practical and ensures that whatever we learn is applied in the field. He has excellent tracking skills and coordinates well with the naturalist, which is always a great combination. He ensures that all end-to-end arrangements are in place and blends seamlessly with the group to create cherished memories. I have always enjoyed his tours and photo workshops.",
-    image: "/images/guests/rajanikanth.jpg",
+    image: "/images/Guests/Rajanikanth.jpg",
   },
   {
     name: 'Krishna Chaitanya',
     location: 'Hyderabad',
     review: "An absolutely breathtaking experience! The guides were knowledgeable, and the entire trip was organized flawlessly. I captured some of the best photos of my life. Highly recommended for any wildlife enthusiast.",
-    image: "/images/guests/kc.jpg",
+    image: "/images/Guests/KC.jpg",
   },
   {
     name: 'Randheer Reddy',
     location: 'Hyderabad',
     review: "From the planning stages to the final safari, everything was perfect. The team&apos;s passion for wildlife is contagious. They go the extra mile to ensure you have a safe, ethical, and unforgettable adventure.",
-    image: "/images/guests/randheer.jpg",
+    image: "/images/Guests/Randheer.jpg",
   },
 ];
 

@@ -64,7 +64,7 @@ export default function Home() {
             */}
             {/* Birding Tours */}
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
-              <Image src="/images/birding/hawk-eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" width={160} height={160} />
+              <Image src="/images/Hawk-Eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" width={160} height={160} />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Birding Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Discover India&apos;s rich avian diversity with our birding experts. Perfect for beginners with masterclasses and guided walks.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Coming Up...</a>
@@ -108,7 +108,7 @@ export default function Home() {
           {/* Left: Image */}
           <div className="flex-1 w-full flex justify-center">
             <Image 
-              src="/images/guests/Tour-Participants.jpg"
+              src="/images/Guests/Tour-participants.jpg"
               alt="Group photo of tour participants"
               className="rounded-xl shadow-lg w-full max-w-[200px] aspect-circle object-cover object-center"
               width={200}
