@@ -5,8 +5,8 @@ const HeroBannerWildlife = () => (
     {/* Background Image */}
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
       <Image
-        src="/images/Gallery-Wildlife/Cutlip_Web.png"
-        alt="Chota Dadiya;" sizes='100vw'
+        src="/images/Gallery-Wildlife/CutLip_Web.png"
+        alt="TIger Cutlip walking in her habitat" sizes='100vw'
         fill
         style={{ objectFit: 'cover', objectPosition: 'center', opacity: 1 }}
         priority
