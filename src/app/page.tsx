@@ -56,7 +56,7 @@ export default function Home() {
             {/* Corporate Wildlife Tours */}
             {/*
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
-              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Crossover Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <Image src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Crossover Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" width={160} height={160} />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Crossover Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Team-building in the wild! Our corporate tours offer unique bonding experiences, leadership activities, and nature-based workshops in stunning locations.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Enquire</a>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 /* const DeerIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block align-middle mr-2">
@@ -86,7 +87,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo & Brand */}
           <Link href="/" className="flex items-center text-lg font-bold tracking-wide gap-2" onClick={closeMenu}>
-            <img src="/images/INTO THE WILD.png" alt="IntoTheWild Logo" className="h-8 w-auto object-contain" />
+            <Image src="/images/INTO THE WILD.png" alt="IntoTheWild Logo" className="h-8 w-auto object-contain" width={120} height={32} />
             <span className="align-middle hidden sm:inline">IntoTheWild</span>
           </Link>
 
