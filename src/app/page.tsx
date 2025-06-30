@@ -108,7 +108,7 @@ export default function Home() {
           {/* Left: Image */}
           <div className="flex-1 w-full flex justify-center">
             <Image 
-              src="/images/Guests/Tour-participants.jpg"
+              src="/images/Guests/Tour-Participants.jpg"
               alt="Group photo of tour participants"
               className="rounded-xl shadow-lg w-full max-w-[200px] aspect-circle object-cover object-center"
               width={200}
