@@ -74,7 +74,7 @@ const CustomerReviews = () => {
               className="bg-black/50 backdrop-blur-md border border-[#7AD151]/50 rounded-2xl p-6 sm:p-8 shadow-2xl text-white transition-opacity duration-500 animate-fade-in w-full h-full flex flex-col justify-center"
             >
               <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4 sm:gap-6 mb-4">
-                <Image
+                <Image unoptimized={true}
                   src={reviews[activeIndex].image}
                   alt={reviews[activeIndex].name}
                   width={80}
