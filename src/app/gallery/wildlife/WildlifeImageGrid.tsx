@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 
 const images = [
@@ -44,7 +45,7 @@ const WildlifeImageCarousel = () => {
   return (
     <section className="w-full bg-[#0C0C0C] py-12 px-6 flex flex-col items-center justify-center">
       <div className="w-full max-w-xl aspect-square overflow-hidden rounded-lg shadow-lg flex items-center justify-center bg-black">
-        <img
+        <Image
           src={images[current]}
           alt={`Wildlife ${current + 1}`}
           className="w-full h-full object-cover object-center transition-all duration-700"

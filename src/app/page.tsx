@@ -2,6 +2,7 @@
 
 import CustomerReviews from "./components/CustomerReviews";
 import { FaInstagram } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,10 +12,12 @@ export default function Home() {
         className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden pt-20"
       >
         {/* Background Image */}
-        <img
+        <Image
           src="/images/Chota-Dadiyal.png"
           alt="Hero image"
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          width={1920}
+          height={1080}
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/10 z-10" />
@@ -41,7 +44,7 @@ export default function Home() {
           <div className="flex flex-col gap-10">
             {/* Guided Wildlife Tours */}
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px]">
-              <img src="/images/Magge-Headon.png" alt="Guided Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <Image src="/images/Magge-Headon.png" alt="Guided Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" width={160} height={160} />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Guided Wildlife Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Join our expert-led expeditions into India&apos;s wildest jungles. Experience thrilling safaris, learn about conservation, and capture stunning wildlife moments.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Tour Info</a>
@@ -61,7 +64,7 @@ export default function Home() {
             */}
             {/* Birding Tours */}
             <div className="bg-[#181818] rounded-xl p-8 flex flex-col items-center shadow-lg min-w-[320px] min-h-[420px] self-center">
-              <img src="/images/birding/hawk-eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" />
+              <Image src="/images/birding/hawk-eagle.jpg" alt="Corporate Wildlife Tours" className="w-40 h-40 object-cover rounded-md mb-4 mx-auto" width={160} height={160} />
               <h2 className="text-[#7AD151] font-bold text-xl mb-2">Birding Tours</h2>
               <p className="text-gray-300 text-sm mb-4 text-center">Discover India&apos;s rich avian diversity with our birding experts. Perfect for beginners with masterclasses and guided walks.</p>
               <a href="#" className="uppercase text-sm bg-[#7AD151] text-[#0C0C0C] px-4 py-2 rounded-md font-semibold hover:bg-[#5fa233] transition-colors">Coming Up...</a>
@@ -104,10 +107,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           {/* Left: Image */}
           <div className="flex-1 w-full flex justify-center">
-            <img 
+            <Image 
               src="/images/guests/Tour-Participants.jpg"
               alt="Group photo of tour participants"
               className="rounded-xl shadow-lg w-full max-w-[200px] aspect-circle object-cover object-center"
+              width={200}
+              height={200}
             />
           </div>
           {/* Right: Content */}
@@ -153,18 +158,20 @@ export default function Home() {
           <div className="flex gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-6 md:overflow-x-visible">
             {/* Image Card 1 */}
             <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
-              <img src="/images/Magge-Headon.png" alt="Expedition 1" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              <Image src="/images/Magge-Headon.png" alt="Expedition 1" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" width={220} height={240} />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
               </div>
             </div>
             {/* Image Card 2 */}
             <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
-              <img
+              <Image
                 src="/images/Tadoba-ChotaDadiyal.png"
                 alt="Expedition 2"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 style={{ objectPosition: "center" }}
+                width={220}
+                height={240}
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
@@ -172,18 +179,20 @@ export default function Home() {
             </div>
             {/* Image Card 3 */}
             <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
-              <img src="/images/Coorg-Tusker.jpg" alt="Expedition 3" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              <Image src="/images/Coorg-Tusker.jpg" alt="Expedition 3" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" width={220} height={240} />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
               </div>
             </div>
             {/* Image Card 4 */}
             <div className="relative min-w-[220px] h-56 md:min-w-0 md:h-60 rounded-xl shadow-lg overflow-hidden group">
-              <img
+              <Image
                 src="/images/Tadoba-Shimbu.png"
                 alt="Expedition 4"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 bg-black"
                 style={{ objectPosition: "center" }}
+                width={220}
+                height={240}
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-xs text-white m-3">Chota Dadiyal, Tadoba 2025</span>
@@ -286,7 +295,7 @@ export default function Home() {
           </form>
           {/* Right: Map/Image */}
           <div className="w-full flex items-center justify-center">
-             <img src="/images/Elephant-Herd.jpg" alt="Elephant Herd in the jungle" className="rounded-xl shadow-lg w-full h-full object-cover object-center max-h-[400px]" />
+             <Image src="/images/Elephant-Herd.jpg" alt="Elephant Herd in the jungle" className="rounded-xl shadow-lg w-full h-full object-cover object-center max-h-[400px]" width={600} height={400} />
           </div>
         </div>
       </section>
