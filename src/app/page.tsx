@@ -276,6 +276,7 @@ export default function Home() {
                   
                   alert('Thank you for your enquiry! Your email client should open with a pre-filled message.');
                 } catch (error) {
+                  console.error('Error sending message:', error);
                   alert('There was an error sending your message. Please try again or contact us directly.');
                 }
               }}

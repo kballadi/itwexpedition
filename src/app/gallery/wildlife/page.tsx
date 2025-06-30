@@ -1,5 +1,5 @@
 import HeroBannerWildlife from './HeroBannerWildlife';
-import WildlifeImageGrid from './WildlifeImageGrid';
+/* import WildlifeImageGrid from './WildlifeImageGrid'; */
 import WildlifeImageCarousel from './WildlifeImageGrid';
 import CopyrightNotice from './CopyrightNotice';
 
