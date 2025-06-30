@@ -5,7 +5,7 @@ const HeroBannerWildlife = () => (
     {/* Background Image */}
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
       <Image
-        src="/images/gallery-wildlife/cutlip_web.png"
+        src="/images/Gallery-Wildlife/Cutlip_Web.png"
         alt="Chota Dadiya;" sizes='100vw'
         fill
         style={{ objectFit: 'cover', objectPosition: 'center', opacity: 1 }}
