@@ -22,7 +22,7 @@ export default function Home() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/10 z-10" />
         {/* Centered Content */}
-        <div className="relative z-20 flex flex-col items-center justify-center text-center px-4">
+        <div className="relative z-20 flex flex-col items-center justify-end text-center px-4 h-full pb-12 md:pb-20">
           <h1 className="text-white text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
             Explore Indian Jungles with Us
           </h1>
